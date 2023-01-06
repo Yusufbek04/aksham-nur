@@ -1,9 +1,10 @@
 package uz.pdp.akshamnurserver.entity;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
 
 @Entity
 @AllArgsConstructor

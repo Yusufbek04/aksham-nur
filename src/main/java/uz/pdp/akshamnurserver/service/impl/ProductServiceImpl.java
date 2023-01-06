@@ -2,9 +2,9 @@ package uz.pdp.akshamnurserver.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import uz.pdp.akshamnurserver.ProductRepository;
 import uz.pdp.akshamnurserver.payload.ApiResult;
 import uz.pdp.akshamnurserver.payload.ProductDTO;
+import uz.pdp.akshamnurserver.repository.ProductRepository;
 import uz.pdp.akshamnurserver.service.abs.ProductService;
 
 import java.util.List;

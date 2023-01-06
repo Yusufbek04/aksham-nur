@@ -4,6 +4,7 @@ import lombok.*;
 import uz.pdp.akshamnurserver.entity.Product;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Builder
 @Getter
@@ -35,6 +36,6 @@ public class ProductDTO {
         return products
                 .stream()
                 .map(product -> mapToDTO(product))
-                .toList();
+                .collect(Collectors.toList());
     }
 }
