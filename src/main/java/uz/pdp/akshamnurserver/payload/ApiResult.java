@@ -76,6 +76,10 @@ public class ApiResult<T> implements Serializable {
         return new ApiResult<>(errorMsg, errorCode);
     }
 
+    public static ApiResult<Boolean> errorResponse() {
+        return new ApiResult<>(false);
+    }
+
     public static ApiResult<ErrorData> errorResponse(List<ErrorData> errors) {
         return new ApiResult<>(errors);
     }

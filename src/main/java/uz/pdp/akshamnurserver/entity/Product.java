@@ -1,8 +1,6 @@
 package uz.pdp.akshamnurserver.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -10,6 +8,8 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
+@Builder
+@Setter
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,5 +26,11 @@ public class Product {
     private String description;
 
     @Column(nullable = false)
+    private String aboutProduct;
+
+    @Column(nullable = false)
     private Float price;
+
+
 }
+

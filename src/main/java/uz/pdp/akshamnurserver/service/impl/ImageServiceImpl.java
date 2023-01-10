@@ -15,6 +15,7 @@ import java.util.List;
 public class ImageServiceImpl implements ImageService {
     @Override
     public ResponseEntity<InputStreamResource> getImage(String name) {
+        System.out.println("keldo");
         ClassPathResource classPathResource = new ClassPathResource("templates/" + name + ".png");
         InputStreamResource inputStreamResource = null;
         try {

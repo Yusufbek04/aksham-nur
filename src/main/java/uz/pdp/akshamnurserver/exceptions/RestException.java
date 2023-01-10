@@ -6,6 +6,7 @@ import org.springframework.http.HttpStatus;
 import uz.pdp.akshamnurserver.payload.ErrorData;
 
 import java.util.List;
+import java.util.function.Supplier;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
